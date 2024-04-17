@@ -25,6 +25,7 @@ const progressBar = document.querySelector('[data-js="progress-bar"]');
 addEventListener("scroll", () => {
   console.log(calculateScrollPercentage());
   progressBar.style.width = calculateScrollPercentage() + "%";
+  progressBar.style.opacity = calculateScrollPercentage() / 100;
 });
 
 function calculateScrollPercentage() {

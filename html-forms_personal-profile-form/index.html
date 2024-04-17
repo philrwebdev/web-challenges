@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Personal Profile Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <h1 id="persona_profile_title">Create your personal profile</h1>
+  <body>
+    <section>
+      <form aria-labelledby="persona_profile_title-info">
+        <fieldset>
+          <legend>Personal information</legend>
+          <label for="first_name">First Name:</label>
+          <input
+            type="text"
+            name="first_name"
+            id="first_name"
+            placeholder="Enter your first name"
+            minlength="2"
+            required
+          />
+          <label for="last_name">Last Name:</label>
+          <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            placeholder="Enter your last name"
+            minlength="2"
+            required
+          />
+          <label for="birthday">First Name:</label>
+          <input type="date" name="birthday" id="birthday" required />
+        </fieldset>
+
+        <p>
+          Can you tell us a little bit more? We want to annoy you with unwanted
+          ads.
+        </p>
+
+        <fieldset>
+          <legend>Further information</legend>
+          <label for="color">Favourite Color:</label>
+          <input type="color" name="color" id="color" value="#e66465" />
+
+          <label for="favourite_pet">Favourite Pet:</label>
+          <select id="favourite_pet" name="favourite_pet">
+            <option value="">None</option>
+            <option value="Red panda">Red panda</option>
+            <option value="Bunny">Bunny</option>
+          </select>
+        </fieldset>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
